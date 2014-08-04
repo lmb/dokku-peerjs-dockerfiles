@@ -1,3 +1,3 @@
 #!/bin/sh
 
-exec peerjs --port 9000 --key "$PEERJS_KEY"
+exec peerjs -d --port 9000 --key "$PEERJS_KEY"
