@@ -1,3 +1,3 @@
 #!/bin/sh
 
-exec peerjs -d --port 9000 --key "$PEERJS_KEY"
+peerjs -d --port 9000 --key "$PEERJS_KEY" | awk '{ print strftime("%Y-%m-%d %H:%M:%S"), $0; fflush(); }'
