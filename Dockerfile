@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER Lorenz Bauer
 
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs npm
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs npm gawk
 RUN npm install -g peer
 
 ENV PEERJS_KEY peerjs
