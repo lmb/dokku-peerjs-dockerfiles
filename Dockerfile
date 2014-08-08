@@ -13,4 +13,5 @@ ADD start-peerjs-server.sh /usr/bin/
 RUN chmod +x /usr/bin/start-peerjs-server.sh
 
 EXPOSE 9000
+USER nobody
 CMD ["/usr/bin/start-peerjs-server.sh"]
